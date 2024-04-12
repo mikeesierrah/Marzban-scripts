@@ -160,8 +160,8 @@ ENV="$HOME/$panel/.env"
 DOCKER="$HOME/$panel/docker-compose.yml"
 #setting up env
 cat << EOF > "$ENV"
-SERVICE_PORT = $service_port
-XRAY_API_PORT = $api_port
+SERVICE_PORT = $service
+XRAY_API_PORT = $api
 XRAY_EXECUTABLE_PATH = /var/lib/marzban-node/$panel-core
 SSL_CLIENT_CERT_FILE = /var/lib/marzban-node/$panel.pem
 SERVICE_PROTOCOL = rest
