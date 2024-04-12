@@ -187,16 +187,17 @@ EOF
 
 echo "docker-compose.yml has been created successfully."
 
-echo "Please paste the content of the Client Certificate, then type 'END' on a new line when finished:"
+echo "Please paste the content of the Client Certificate, press ENTER on a new line when finished:"
 
 cert=""
 while IFS= read -r line
 do
-    if [[ $line == "END" ]]; then
+    if [[ -z $line ]]; then
         break
     fi
     cert+="$line\n"
 done
+
 
 echo -e "$cert" | sudo tee /var/lib/marzban-node/$panel.pem > /dev/null
 
