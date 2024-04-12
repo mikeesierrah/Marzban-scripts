@@ -159,7 +159,7 @@ sudo mkdir -p /var/lib/marzban-node
 ENV="$HOME/$panel/.env"
 DOCKER="$HOME/$panel/docker-compose.yml"
 #setting up env
-cat << EOF > "$ENV_FILE"
+cat << EOF > "$ENV"
 SERVICE_PORT = $service_port
 XRAY_API_PORT = $api_port
 XRAY_EXECUTABLE_PATH = /var/lib/marzban-node/$panel-core
