@@ -203,11 +203,6 @@ while IFS= read -r line; do
 done
 
 echo -e "$cert" | sudo tee /var/lib/marzban-node/$panel.pem > /dev/null
-
 echo -e "\e[32mCertificate is ready, starting the container...\e[0m"
-
-cd "$HOME/$panel" || {
-    echo -e "\e[31mSomething went wrong! Couldn't enter $panel directory.\e[0m"
-    exit 1
-}
-docker-compose up -d --remove-orphans
+cd "$HOME/$panel" || { echo "Something went wrong! couldnt enter $panel directory"; exit 1;}
+docker compose up -d --remove-orphans
