@@ -16,3 +16,11 @@ You can also install marzban node using this command (run the script again if yo
 ```bash
 bash <(curl -Ls https://github.com/mikeesierrah/Marzban-scripts/raw/master/marzban-node.sh)
 ``` 
+You can also install marzban node without docker using this command 
+```bash
+bash <(curl -Ls https://github.com/mikeesierrah/Marzban-scripts/raw/master/node-no-docker.sh) @ install
+``` 
+custom names
+```bash
+bash <(curl -Ls https://github.com/mikeesierrah/Marzban-scripts/raw/master/node-no-docker.sh) @ install --name node
+``` 
