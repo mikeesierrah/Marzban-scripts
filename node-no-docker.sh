@@ -46,7 +46,7 @@ ENV_FILE="$APP_DIR/.env"
 LAST_XRAY_CORES=5
 CERT_FILE="$APP_DIR/cert.pem"
 FETCH_REPO="mikeesierrah/Marzban-scripts"
-SCRIPT_URL="https://github.com/$FETCH_REPO/raw/master/marzban-node-no-docker.sh"
+SCRIPT_URL="https://github.com/$FETCH_REPO/raw/master/node-no-docker.sh"
 
 colorized_echo() {
     local color=$1
